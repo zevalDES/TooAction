@@ -1,0 +1,6 @@
+{
+    "type":"solid",
+    "features":{
+        "friction":0.6
+    }
+}

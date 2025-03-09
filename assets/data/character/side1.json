@@ -1,0 +1,9 @@
+{
+    "id":"side",
+    "scale":1.5625,
+    "actStep":0.2,
+    "speedX":8,
+    "speedY":24,
+    "offsetX":-4,
+    "offsetY":0
+}

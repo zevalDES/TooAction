@@ -1,0 +1,11 @@
+{
+    "id":"map0",
+    "terrain":{
+        "14":
+        {"0": "dirt", "1": "dirt", "2": "dirt", "3": "dirt", "4": "dirt", "5": "dirt", "6": "dirt", "7": "dirt", "8": "dirt", "9": "dirt", "10": "dirt", "11": "dirt", "12": "dirt", "13": "dirt", "14": "dirt", "15": "dirt", "16": "dirt", "17": "dirt", "18": "dirt", "19": "dirt", "20": "dirt", "21": "dirt", "22": "dirt", "23": "dirt", "24": "dirt", "25": "dirt", "26": "dirt", "27": "dirt", "28": "dirt", "29": "dirt", "30": "dirt", "31": "dirt", "32": "dirt", "33": "dirt", "34": "dirt", "35": "dirt", "36": "dirt", "37": "dirt", "38": "dirt", "39": "dirt", "40": "dirt"}
+    },
+    "respawn":{
+        "p1":[1,28],
+        "p2":[38,28]
+    }
+}
