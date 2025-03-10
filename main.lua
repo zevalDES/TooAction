@@ -11,6 +11,8 @@ end
 
 function love.update(dt)
     delta=dt
+
+    mouse.getPosition()
     state.update()
 end
 
@@ -18,4 +20,5 @@ function love.draw()
     --love.graphics.circle("fill",400,300,50)
     state.draw()
     love.graphics.print(1/delta,0,0)
+    love.graphics.print(mouse.position.x..":"..mouse.position.y,0,40)
 end
