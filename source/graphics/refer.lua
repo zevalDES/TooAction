@@ -3,24 +3,24 @@ local refer={}
 local function topleft(x,y,bounds,offsets,scales)
     local offsetX=offsets.x or 0
     local offsetY=offsets.y or 0
-    local x1=(x+offsetX)*scales.x
-    local y1=(y+offsetY)*scales.y
+    local x1=x+(offsetX)*scales.x
+    local y1=y+(offsetY)*scales.y
     return x1,y1
 end
 local function topright(x,y,bounds,offsets,scales)
     local offsetX=offsets.x or 0
     local offsetY=offsets.y or 0
     local w=bounds.width
-    local x1=(x+offsetX-w)*scales.x
-    local y1=(y+offsetY)*scales.y
+    local x1=x+(offsetX-w)*scales.x
+    local y1=y+(offsetY)*scales.y
     return x1,y1
 end
 local function bottomleft(x,y,bounds,offsets,scales)
     local offsetX=offsets.x or 0
     local offsetY=offsets.y or 0
     local h=bounds.height
-    local x1=(x+offsetX)*scales.x
-    local y1=(y+offsetY+h)*scales.y
+    local x1=x+(offsetX)*scales.x
+    local y1=y+(offsetY+h)*scales.y
     return x1,y1
 end
 local function bottomright(x,y,bounds,offsets,scales)
@@ -28,8 +28,8 @@ local function bottomright(x,y,bounds,offsets,scales)
     local offsetY=offsets.y or 0
     local w=bounds.width
     local h=bounds.height
-    local x1=(x+offsetX-w)*scales.x
-    local y1=(y+offsetY+h)*scales.y
+    local x1=x+(offsetX-w)*scales.x
+    local y1=y+(offsetY+h)*scales.y
     return x1,y1
 end
 local function origin(x,y,bounds,offsets,scales)
@@ -37,8 +37,8 @@ local function origin(x,y,bounds,offsets,scales)
     local offsetY=offsets.y or 0
     local w=bounds.width
     local h=bounds.height
-    local x1=(x+offsetX-(w/2))*scales.x
-    local y1=(y+offsetY+(h/2))*scales.y
+    local x1=x+(offsetX-(w/2))*scales.x
+    local y1=y+(offsetY+(h/2))*scales.y
     return x1,y1
 end
 local function customPoint(x,y,bounds,offsets,scales)
@@ -58,7 +58,7 @@ local references={
     bottomright=bottomright,
     origin=origin
 }
-function refer.transform(x,y,image,reference,offsets,scales)
+function refer.transform(x,y,image,reference,offsets,scales,args)
     local references=references
     local image=love.graphics.newImage(image)
     local w=image:getWidth()

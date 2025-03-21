@@ -11,7 +11,6 @@ end
 
 function love.update(dt)
     delta=dt
-
     mouse.getPosition()
     state.update()
 end
